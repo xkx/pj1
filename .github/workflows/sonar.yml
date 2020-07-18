@@ -1,0 +1,20 @@
+name: SonarQube Scan
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: madgets/sonarqube-action@master
+      with:
+          host: http://sonarqubeforgithub.trechina.cn/
+          projectKey: testforgithub-sonar-smartcheck-plugin 
+          projectName: testforgithub-sonar-smartcheck-plugin
+          projectVersion: testforgithub5020099
+          projectBaseDir: .
+          login: cb895ad2cf20d62798afeac1adfbce5489562517
