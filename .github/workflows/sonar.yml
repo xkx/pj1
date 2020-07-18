@@ -16,5 +16,4 @@ jobs:
           projectKey: my-django-demo 
           projectName: my-django-demo
           projectVersion: my-first-try
-          projectBaseDir: /pj1
           login: cb895ad2cf20d62798afeac1adfbce5489562517
