@@ -10,7 +10,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: kitabisa/sonarqube-action@v1.0.0
+    - uses: actions/checkout@master
+    - uses: madgets/sonarqube-action@master
       with:
           host: http://sonarqubeforgithub.trechina.cn/
           projectKey: my-django-demo 
